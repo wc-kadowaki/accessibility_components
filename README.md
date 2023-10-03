@@ -1,7 +1,27 @@
-# Vue 3 + Vite
+# Accessibility
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## インタラクティブな要素
 
-## Recommended IDE Setup
+### link
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+リソースへの参照を提供するウィジェット
+
+#### 要点
+
+- キーボード操作、右クリックのメニュー、キーボードを押しながらクリックなど button との仕様の違いを考え適切に使用する
+
+### button
+
+#### アクセシブルにするメリット
+
+- 支援技術に正しい情報を伝えることができる
+
+#### 要点
+
+ボタンの役割によって必要な aria が異なるため必要なものを組み合わせ実装する
+
+- ボタンの状態を視覚的だけでなく支援技術に伝える為に aria-pressed
+- ボタンの役割を支援技術に伝える為に aria-haspopup
+- ボタンがどの要素をコントロールしているのかを aria-controls
+- ボタンがコントロールしている要素の状態を aria-expanded
+- ボタンにテキストが含まれず視覚的にしかどのようなボタンかわからない場合に読み上げソフトで読まれるように aria-label

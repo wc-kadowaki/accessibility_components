@@ -1,25 +1,14 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
+import InteractiveElement from './components/InteractiveElement.vue';
+import AccordionMenu from './components/AccordionMenu.vue';
 </script>
 
 <template>
   <div>
     <h1>Accessibility components</h1>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <InteractiveElement />
+  <AccordionMenu />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>
