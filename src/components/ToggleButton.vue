@@ -50,7 +50,7 @@ const setAriaAttribute = (element, isActive) => {
 </template>
 
 <style lang="scss">
-@use '/src/assets/mixin' as mixin;
+@use '/src/assets/styles/mixin' as mixin;
 .button {
   &__item {
     @include mixin.button-style-reset;
