@@ -8,6 +8,7 @@ import LinkElement from './LinkElement.vue';
     <div class="interactive__item">
       <LinkElement />
     </div>
+    <button>ボタン</button>
     <div class="interactive__item">
       <ToggleButton />
     </div>

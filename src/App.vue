@@ -1,16 +1,10 @@
-<script setup>
-import Breadcrumb from './components/Breadcrumb.vue';
-import InteractiveElement from './components/InteractiveElement.vue';
-import AccordionMenu from './components/AccordionMenu.vue';
-</script>
+<script setup></script>
 
 <template>
   <div>
     <h1>Accessibility components</h1>
+    <RouterView />
   </div>
-  <Breadcrumb />
-  <InteractiveElement />
-  <AccordionMenu />
 </template>
 
 <style scoped></style>
