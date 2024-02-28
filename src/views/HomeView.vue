@@ -3,6 +3,7 @@ import BreadcrumbVue from '../components/BreadcrumbVue.vue';
 import InteractiveElement from '../components/InteractiveElement.vue';
 import AccordionVue from '../components/AccordionVue.vue';
 import ModalVue from '../components/ModalVue.vue';
+import CarouselVueVue from '../components/CarouselVue.vue';
 
 const breadcrumbs = [
   {
@@ -41,6 +42,9 @@ const breadcrumbs = [
     </section>
     <section class="contents__section">
       <ModalVue />
+    </section>
+    <section class="contents__section">
+      <CarouselVueVue />
     </section>
   </main>
 </template>
